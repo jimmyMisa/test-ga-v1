@@ -7,6 +7,6 @@ jobs:
       - name: checkout my branch
         uses: actions/checkout@v3
       - run: |
-          echo "Bonjour"
+          echo "${{ toJson(github) }}"
           ls -al
           pwd

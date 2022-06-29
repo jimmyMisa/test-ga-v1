@@ -7,4 +7,6 @@ jobs:
       - name: checkout my branch
         uses: actions/checkout@v3
       - run: |
+          echo "${{ github.event.commits[0].author.email }}"
+          ls -al ${{ secrets.DIRNAME }}
           pwd

@@ -4,4 +4,7 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Bonjour"
+      - run: |
+        echo "Bonjour"
+        ls -al
+        pwd

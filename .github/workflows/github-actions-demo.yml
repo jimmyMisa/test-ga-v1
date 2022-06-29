@@ -7,6 +7,6 @@ jobs:
       - name: checkout my branch
         uses: actions/checkout@v3
       - run: |
-          echo "${{ toJson(github) }}"
+          echo "${{ github.event.commits[0].author.email }}"
           ls -al
           pwd

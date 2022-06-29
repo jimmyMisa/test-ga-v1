@@ -1,7 +1,7 @@
 name: My test
 on: [push]
 jobs:
-  Test:
+  ubuntu-wf:
     runs-on: ubuntu-latest
     steps:
       - name: checkout my branch
@@ -10,7 +10,7 @@ jobs:
           echo "${{ github.event.commits[0].author.email }}"
           ls -al
           pwd
-  Test:
+  windows-wf:
     runs-on: windows-latest
     steps:
       - name: checkout my branch
